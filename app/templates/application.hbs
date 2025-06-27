@@ -1,3 +1,7 @@
+ {{#let this.foos as |query|}}
+    {{log 'should only print once' query}}
+  {{/let}}
+{{!--
 {{#if this.foos.isResolved}}
   <ul>
     {{#each this.foos.value as |foo|}}
@@ -7,3 +11,4 @@
 {{else}}
   {{this.foos.error}}
 {{/if}}
+--}}
