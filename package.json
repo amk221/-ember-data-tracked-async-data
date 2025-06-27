@@ -27,6 +27,8 @@
     "test:ember": "ember test"
   },
   "devDependencies": {
+    "ember-async-data": "^1.0.3",
+    "@ember/test-waiters": "^3.0.0",
     "@babel/core": "^7.26.10",
     "@babel/eslint-parser": "^7.26.10",
     "@babel/plugin-proposal-decorators": "^7.25.9",
@@ -49,7 +51,7 @@
     "ember-cli-inject-live-reload": "^2.1.0",
     "ember-cli-sri": "^2.1.1",
     "ember-cli-terser": "^4.0.2",
-    "ember-data": "~5.3.12",
+    "ember-data": "~5.5.0",
     "ember-fetch": "^8.1.2",
     "ember-load-initializers": "^3.0.1",
     "ember-modifier": "^4.2.0",
