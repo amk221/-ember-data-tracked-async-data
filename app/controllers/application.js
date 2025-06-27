@@ -6,8 +6,13 @@ import { service } from '@ember/service';
 export default class ApplicationController extends Controller {
   @service store;
 
-  @cached
+  // @cached
+  // get foos() {
+  //   return load(this.store.query('foo', { perPage: 2 }));
+  // }
+
   get foos() {
-    return load(this.store.query('foo', { perPage: 2 }));
+    console.log('evaluating foos');
+    return this.store.query('foo', { perPage: 2 });
   }
 }
