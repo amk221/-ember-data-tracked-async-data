@@ -1,6 +1,6 @@
 {{#if this.foos.isResolved}}
   <ul>
-    {{#each this.foos.value as |foo|}}
+    {{#each this.foos.result as |foo|}}
       <li>{{foo.id}} - {{foo.name}}</li>
     {{/each}}
   </ul>

@@ -1,5 +1,5 @@
 import Controller from '@ember/controller';
-import { load } from 'ember-async-data';
+import { getPromiseState } from '@warp-drive/ember';
 import { cached } from '@glimmer/tracking';
 import { service } from '@ember/service';
 
@@ -8,6 +8,6 @@ export default class ApplicationController extends Controller {
 
   @cached
   get foos() {
-    return load(this.store.query('foo', { perPage: 2 }));
+    return getPromiseState(this.store.query('foo', { perPage: 2 }));
   }
 }
